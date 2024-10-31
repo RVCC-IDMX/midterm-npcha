@@ -1,23 +1,191 @@
 /* Styles for Mobile Site */
+body {
+    font-family: Nunito;
+    background-color: #FBDCD5;
+
+}
+
+h1, h2 {
+    font-family: Poppins;
+    text-align: center;
+    font-size: 30px;
+}
+
+h2 {
+    margin: .1em;
+}
+
+h3 {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+h4 {
+    margin-top: 0;
+}
 
 /* Header & Hero */
+#header {
+    text-align: center;
+}
+
+#hero {
+    color: black;
+    text-align: center;
+}
+#hero img {
+    width: 100px;
+    border: 4px solid white
+}
 
 /* Projects */
+#projects {
+    border: 2px solid #002664;
+    margin-bottom: 2rem;
+}
+
+.project img {
+    width: 100%;
+}
+
+.project {
+    background-color: #002664;
+    text-align: center;
+}
+
+.description {
+    font-size: 20px;
+    border: 2px solid #002664;
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+
+}
+
+.description p {
+    font-size: 14px;
+}
+
+#projects hr {
+    display: none;
+    border: 2px solid #002664;
+}
 
 /* Reviews */
 
+.review {
+    border: 2px solid white;
+    background-color: #002664;
+    margin-bottom: 1rem;
+}
+
+.name {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: white;
+    font-size: 14px;
+}
+
+.title {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: white;
+    font-size: 11px;
+}
+
+.rating {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 10px;
+}
+
+.content {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: white;
+    font-size: 12px;
+}
+
 /* Footer */
+footer {
+    font-size: 10px;
+    text-align: center;
+}
 
 
 /* Media state for Desktop site */
 @media (min-width: 1000px) {
 
+    h1, h2 {
+        font-size: 40px;
+    }
+    
     /* Header & Hero */
-
+    #header {
+        text-align: center;
+    }
+    
+    #hero {
+        font-size: 25px;
+        color: black;
+    }
+    #hero img {
+        width: 150px;
+        border: 4px solid white
+    }
+    
     /* Projects */
+    #projects {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 
+    .project img {
+        max-width: 100%;
+    }
+    
+    .project {
+        text-align: center;
+        padding: 1rem;
+
+    }
+    
+    .description {
+        font-size: 30px;
+        color: white;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    
+    .description p {
+        font-size: 18px;
+    }
+
+    #projects h2 {
+        grid-column: 1/-1;
+    }
+    
     /* Reviews */
-
+    .name {
+        font-size: 20px;
+    }
+    
+    .title {
+        font-size: 15px;
+    }
+    
+    .rating {
+        font-size: 18px;
+    }
+    
+    .content {
+        font-size: 18px;
+    }
+    
     /* Footer */
+    footer {
+        font-size: 15px;
+    }
 
 }
